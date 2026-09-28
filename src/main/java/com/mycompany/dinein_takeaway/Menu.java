@@ -1,11 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.dinein_takeaway;
 
 public class Menu {
-    
+
     private String namaMenu;
     private double harga;
     private String kategori;
@@ -16,7 +12,6 @@ public class Menu {
         this.kategori = kategori;
     }
 
-    
     public String getNamaMenu() {
         return namaMenu;
     }
@@ -29,7 +24,6 @@ public class Menu {
         return kategori;
     }
 
-    
     public void setNamaMenu(String namaMenu) {
         if (namaMenu != null && !namaMenu.isEmpty()) {
             this.namaMenu = namaMenu;
@@ -55,6 +49,9 @@ public class Menu {
     }
 
     public void tampilkanInfo() {
-        System.out.printf("%-20s | %-10s | Rp%,.0f%n", namaMenu, kategori, harga);
+        System.out.printf(
+            "%-20s | %-10s | Rp%,.0f%n",
+            namaMenu, kategori, harga
+        );
     }
 }
